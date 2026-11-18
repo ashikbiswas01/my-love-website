@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1a0b2e">
+    <title>For You ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,500&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-stage="0">
+
+    <!-- Animated background -->
+    <div class="background" aria-hidden="true">
+        <i class="blob b1"></i>
+        <i class="blob b2"></i>
+        <i class="blob b3"></i>
+    </div>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="hearts" aria-hidden="true"></div>
+    <div class="petals" aria-hidden="true"></div>
+
+    <!-- Premium romantic dashboard -->
+    <div class="dashboard-shell">
+        <aside class="side-panel left-panel" aria-label="Website navigation">
+            <div class="brand-lockup"><div class="brand-mark">♡</div><div><strong>For You</strong><small>OUR LITTLE WORLD</small></div></div>
+            <div class="side-label">MENU</div>
+            <nav class="side-nav">
+                <a class="nav-link active" href="#card"><span>⌂</span><span>Our Story</span><i>✦</i></a>
+                <a class="nav-link" href="#momentPanel"><span>♡</span><span>Special Moments</span></a>
+                <a class="nav-link" href="#quotePanel"><span>✧</span><span>Little Reminder</span></a>
+                <button class="nav-link music-nav" type="button" id="musicNav"><span>♫</span><span>Music Player</span><b>♪</b></button>
+            </nav>
+            <div class="side-note"><span class="tiny-heart">♥</span><p>Some moments become memories. Some people become home.</p><small>MADE WITH LOVE</small></div>
+        </aside>
+
+        <main class="container">
+            <div class="center-heading"><span class="eyebrow">A LITTLE PLACE JUST FOR YOU</span><span class="online-dot"></span><span class="online-text">A special moment</span></div>
+            <section class="glass" id="card">
+                <div class="card-topline"><span>♡ &nbsp; A NOTE FROM MY HEART</span><span class="sparkle">✦ ✧</span></div>
+                <h1 id="title">For You ❤️</h1>
+                <p id="message"></p>
+
+                <div id="buttons" hidden>
+                    <button id="yesBtn" type="button">YES ❤️</button>
+                    <span id="noSlot"><button id="noBtn" type="button">NO 💔</button></span>
+                </div>
+
+                <div class="progress-meta"><span>OUR STORY</span><span>ONE STEP AT A TIME</span></div>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div id="progressBar"></div>
+                </div>
+                <div class="card-footnote">✧ &nbsp; Every beautiful story starts somewhere &nbsp; ✧</div>
+            </section>
+            <div class="center-footer">WITH A LITTLE EXTRA LOVE <span>♥</span></div>
+        </main>
+
+        <aside class="side-panel right-panel" aria-label="Moment details">
+            <section class="mini-card time-card"><div class="mini-card-head"><span>RIGHT NOW</span><span class="live-pill">LIVE</span></div><div class="clock" id="liveClock">--:--</div><div class="date-line" id="liveDate">Loading date...</div><div class="time-divider"></div><div class="time-caption">A new moment to remember <span>✦</span></div></section>
+            <section class="mini-card moment-card" id="momentPanel"><div class="mini-icon">✿</div><div class="mini-title">Our little universe</div><p>Made of tiny moments, warm feelings and a story waiting to unfold.</p><div class="moment-tags"><span>♡ Memories</span><span>✧ Smiles</span></div></section>
+            <section class="mini-card quote-card" id="quotePanel"><div class="quote-mark">“</div><p id="dailyQuote">The sweetest things in life are felt with the heart.</p><div class="quote-credit">A LITTLE LOVE NOTE</div></section>
+            <div class="right-footer"><span class="pulse-heart">♥</span> KEEP THIS MOMENT CLOSE</div>
+        </aside>
+    </div>
+
+    <!-- Celebration layer (confetti + heart explosion) -->
+    <div id="fx" aria-hidden="true"></div>
+
+    <button id="musicBtn" type="button" aria-label="Turn music on" title="Music on/off">🎵</button>
+
+    <audio id="bgMusic" loop preload="auto" src="./music.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
